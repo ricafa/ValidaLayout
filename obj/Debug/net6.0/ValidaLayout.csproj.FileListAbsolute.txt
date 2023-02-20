@@ -1,0 +1,15 @@
+C:\Users\Ricardo\projetos\dotnet\ValidaLayout\bin\Debug\net6.0\ValidaLayout.exe
+C:\Users\Ricardo\projetos\dotnet\ValidaLayout\bin\Debug\net6.0\ValidaLayout.deps.json
+C:\Users\Ricardo\projetos\dotnet\ValidaLayout\bin\Debug\net6.0\ValidaLayout.runtimeconfig.json
+C:\Users\Ricardo\projetos\dotnet\ValidaLayout\bin\Debug\net6.0\ValidaLayout.dll
+C:\Users\Ricardo\projetos\dotnet\ValidaLayout\bin\Debug\net6.0\ValidaLayout.pdb
+C:\Users\Ricardo\projetos\dotnet\ValidaLayout\obj\Debug\net6.0\ValidaLayout.csproj.AssemblyReference.cache
+C:\Users\Ricardo\projetos\dotnet\ValidaLayout\obj\Debug\net6.0\ValidaLayout.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Ricardo\projetos\dotnet\ValidaLayout\obj\Debug\net6.0\ValidaLayout.AssemblyInfoInputs.cache
+C:\Users\Ricardo\projetos\dotnet\ValidaLayout\obj\Debug\net6.0\ValidaLayout.AssemblyInfo.cs
+C:\Users\Ricardo\projetos\dotnet\ValidaLayout\obj\Debug\net6.0\ValidaLayout.csproj.CoreCompileInputs.cache
+C:\Users\Ricardo\projetos\dotnet\ValidaLayout\obj\Debug\net6.0\ValidaLayout.dll
+C:\Users\Ricardo\projetos\dotnet\ValidaLayout\obj\Debug\net6.0\refint\ValidaLayout.dll
+C:\Users\Ricardo\projetos\dotnet\ValidaLayout\obj\Debug\net6.0\ValidaLayout.pdb
+C:\Users\Ricardo\projetos\dotnet\ValidaLayout\obj\Debug\net6.0\ValidaLayout.genruntimeconfig.cache
+C:\Users\Ricardo\projetos\dotnet\ValidaLayout\obj\Debug\net6.0\ref\ValidaLayout.dll

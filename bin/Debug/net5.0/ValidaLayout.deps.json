@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v5.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v5.0": {
+      "ValidaLayout/1.0.0": {
+        "runtime": {
+          "ValidaLayout.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "ValidaLayout/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
