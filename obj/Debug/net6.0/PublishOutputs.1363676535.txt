@@ -1,0 +1,5 @@
+C:\Users\Ricardo\projetos\dotnet\ValidaLayout\bin\Debug\net6.0\publish\ValidaLayout.exe
+C:\Users\Ricardo\projetos\dotnet\ValidaLayout\bin\Debug\net6.0\publish\ValidaLayout.dll
+C:\Users\Ricardo\projetos\dotnet\ValidaLayout\bin\Debug\net6.0\publish\ValidaLayout.deps.json
+C:\Users\Ricardo\projetos\dotnet\ValidaLayout\bin\Debug\net6.0\publish\ValidaLayout.runtimeconfig.json
+C:\Users\Ricardo\projetos\dotnet\ValidaLayout\bin\Debug\net6.0\publish\ValidaLayout.pdb

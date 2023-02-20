@@ -10,15 +10,9 @@ namespace ValidaLayout
         static void Main(string[] args)
         {
             string archive="";
-            string entry_before = "E";
-            int    entry_number_before = 0;
-
-            string entry = "S";
-            int    entry_number = 0;
-
             if(args.Length == 0 )
             {
-                archive = "AFDT_00100_170220231225.txt";
+                archive = "AFDT_00100_200220231448_24061_DESENV.txt";
             }
             else if(args[0].Equals("help"))
             {
@@ -38,10 +32,16 @@ namespace ValidaLayout
             bool count_error=false;
             int count=0;
             int count_pis=0;
+            string type= "";
             string pis= "";
             string pis_anterior= "";
             string dia="";
-            string dia_anterior="";
+            string dia_anterior="";            
+            string entry_before = "E";
+            string entry = "S";
+            int    entry_number_before = 1;
+            int    entry_number = 0;
+
             string[] lines;
         
             lines = System.IO.File.ReadAllLines(archive);
@@ -72,8 +72,9 @@ namespace ValidaLayout
                 dia = line.Substring(11,8);
                 entry = line.Substring(51,1);
                 entry_number = Convert.ToInt16(line.Substring(52,2));
+                type = line.Substring(54,1);
                 //Console.WriteLine(pis);
-                if(count>2)
+                if(count>2 && !type.Equals("D"))
                 {
                     if(pis.Equals(pis_anterior) && dia.Equals(dia_anterior))
                     {
@@ -82,27 +83,42 @@ namespace ValidaLayout
                     else
                     {
                         count_pis =0;
+                        entry_before = "S";
+                        entry_number_before = 0;
                     }
                     
                     if(count_pis > 4)
                     {
                         log.add($"Divergência: Colaborador com mais de quatro apontamentos na linha: {count}. PIS: {pis}");
                     }
-                    /*
-                    if(entry.Equals("S"))
-                    {
-                        
-                    }
                     
-                    if(entry.Equals(entry_before) && count > 1)
+                    if( entry.Equals("E") && entry_number.Equals(entry_before))
                     {
-                        log.add($"Divergência: Erro na Entrada/Saída. Linha: {count}");
+                        log.add($"Divergência: Erro na Entrada. Linha: {count}");
                     }
 
-                    if(entry_number.Equals(entry_before))
+                    if(entry.Equals("S") && !entry_number.Equals(entry_before) )
                     {
-                        log.add($"Divergência: Erro na Entrada/Saída. Linha: {count}");
-                    }*/
+                        log.add($"Divergência: Erro na Saída. Linha: {count}");
+                    }
+                    if(count_pis == 1)
+                    {
+                        if( entry.Equals("E") && entry_number != 1)
+                        {
+                            log.add($"Divergência: Erro na Entrada. Linha: {count}");
+                        }
+                    }
+                    else
+                    {
+                        if(entry.Equals("S") && entry_number != entry_number_before)
+                        {
+                            log.add($"Divergência: Erro na Saída. Linha: {count}");
+                        }
+                        if(entry.Equals("E") && entry_number <= entry_number_before)
+                        {
+                            log.add($"Divergência: Erro na Entrada. Linha: {count}");
+                        }
+                    }
                 }                
                 entry_before = entry;
                 entry_number_before = entry_number;
